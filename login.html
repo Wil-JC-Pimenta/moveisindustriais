@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="principal">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Metalnart Loja de móveis insdústriais - Vale do Aço-MG">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <title>login</title>
+</head>
+
+
+<body>
+
+  <nav class="pagina-principal">
+    <a href="Index.html">Home</a> |
+    <a href="quemsomos.html">Quem somos</a> |
+    <a href="contato.html">Cadastro</a> |
+    <a href="galeriadefotos.html">Galeria de fotos</a>
+    <a href="login.html">Login</a> |
+  </nav>
+
+  <a href="Index.html"><h2 align="center"><strong> METALNART - MÓVEIS INDÚSTRIAIS</strong></h2></a>
+
+  <br>
+  <hr>
+  <br><br><br>
+
+  <div class="pagina-principal">
+    <div id="banneer2">
+      <table>
+        <tr>
+          <td> <img src="Banner/bannermetalnart.png"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+   <div class="tabela-fotos">
+      <form action="/api/login" method="POST" data-component="login" data-login-form="">
+        <input type="hidden" name="Favoritos" data-favorite-localstorage="">
+        <div class="m-input_field o-social-form_field-hdr -active" data-component="input">
+          CPF ou E-mail:
+          <input type="text" name="Login" data-input-field="" data-login-email="" id="login-email" data-rules="{ &quot;required&quot;: true, &quot;maxlength&quot;: 100 }" maxlength="100" class="m-input_input m-access_login-input a-error_field" aria-invalid="true">
+          <label class="m-input_placeholder" for="login-email">CPF ou E-mail</label>
+        </div>
+        <div class="m-input_field o-social-form_field-hdr -active" data-component="input">
+          Senha:
+          <input type="password" name="Senha" data-input-field="" data-login-password="" data-rules="{ &quot;required&quot;: true, &quot;maxlength&quot;: 32 }" maxlength="32" id="login-password" class="m-input_input m-access_login-input">
+          <label class="m-input_placeholder" for="login-password">Senha</label>
+        </div>
+        <div class="o-social-form_ctas">
+          <button class="a-btn -medium --disabled o-social-form_submit" type="submit" disabled="">Acessar</button>
+          <a class="a-link o-social-form_forgot" href="/esqueci-senha">
+            Esqueceu a senha?
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+<script> 
+
+alert ('Página em construção!');
+
+</script>
+
+</body>
+</html

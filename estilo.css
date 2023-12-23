@@ -1,0 +1,407 @@
+
+
+/* estilo para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* estilo para a classe "principal" usada no HTML */
+.principal {
+  background-color: #d07700;
+}
+
+/* estilo para a classe "pagina-principal" usada no HTML */
+.pagina-principal {
+  border: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url('backgroundnav/backnav.png');
+}
+
+/* estilo para a classe "tabela-fotos"*/
+.tabela-fotos {
+
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url('backgroundnav/backnav.png');
+  border: hidden;
+  width: 100%;
+  margin-top: 20px;
+
+}
+.textodapagina {
+font-size: 25px;
+font-family: sans-serif ;
+font-display: block;
+font-weight: bold;
+text-align: revert-layer;
+}
+.título {
+font-size: 36px;
+background-color: black;
+
+
+}
+
+.banner {
+
+  background-image: url('Banner/bannermetalnart.png');
+  border:none;
+  
+}
+#banner2 { background-color: #000; 
+
+
+
+}
+/* estilo para o título "METALNART - MÓVEIS INDÚSTRIAIS" */
+h2 {
+
+
+  color: white;
+  font-size:1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10;
+}
+
+/* estilo para o link "Cadastro" */
+a {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* estilo para o link "Home" */
+a:hover {
+  color: #fff;
+  background-color: #222;
+  padding: 10px;
+  margin-top: 10;
+  border-radius: 5px;
+}
+
+/* estilo para a tabela usada na seção "Produtos mais vendidos" */
+table {
+  border: hidden;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+p {
+
+font-size: 18px;
+
+
+}
+
+
+/*-------------FIM DO MEU ------------ ABAIXO ESTILO PARA CONTATO H1  */
+
+
+.exemplo:after {
+  content: "Entre em contato conosco";
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.exemplo:after:hover {
+  text-decoration: underline;
+}
+
+.exemplo:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.exemplo:before {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.exemplo a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.exemplo a:hover {
+  text-decoration: underline;
+} 
+
+
+/*ESTILO PARA BOTÃO */
+
+#botaocadastro{
+color: antiquewhite;
+
+
+}
+
+.textocadastro {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #af4444;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#formcadastro {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+h6 {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/** icones redes sociais */ 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-right: 20px;
+
+  font-size: 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+
+/*----------------->ESTILO PARA WHATSAPP E CADASTRO INDEX <----------/*/
+ .contato-home {
+  text-align: center;
+ font-size:24px; 
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 100;
+margin-top: 30px;
+padding-top: 10px;
+padding-left: 5px;
+padding-right: 5px;
+align-items: center;
+
+}
+
+#contato-home-centro {
+
+align-self: auto;
+
+
+
+
+}
+
+
+/*-----------> ESTILO DA GALERIA DE FOTOS <------------*/
+.carousel {
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+    }
+    .carousel-inner {
+      width: 1280px;
+      height: 400px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: all 1s ease-in-out;
+    }
+    .carousel-inner img {
+      float: left;
+      width: 300px;
+      height: 400px;
+    }
+    .carousel-prev, .carousel-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      opacity: 0.7;
+      transition: all 0.3s ease-in-out;
+    }
+    .carousel-prev:hover, .carousel-next:hover {
+      opacity: 1;
+    }
+    .carousel-prev {
+      left: 10px;
+    }
+    .carousel-next {
+      right: 10px;
+    }
+/*//---------------->ESTILO LOGIN <------------//*/
+
+
+/* estilo para o placeholder dos inputs */
+.m-input_placeholder {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 12px;
+  color: #0a0a0a;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+/* estilo para o placeholder dos inputs quando o input tem foco */
+.m-input_input:focus + .m-input_placeholder,
+.m-input_input:not(:placeholder-shown) + .m-input_placeholder {
+  transform: translate(0, -12px);
+  font-size: 10px;
+  color: #f32c04;
+}
+/* estilo para o link "Esqueceu a senha?" */
+.o-social-form_forgot {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #2e04eb;
+  transition: all 0.3s ease;
+}
+/* estilo para o link "Esqueceu a senha?" quando hover */
+.o-social-form_forgot:hover {
+  color: #f70000;
+  text-decoration: underline;
+}
+
+login-pagina-principal {
+
+  background-color: #cfb20eae;
+  border-radius: 5%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 20px;
+
+
+
+}
+
+.galeriacor {
+
+background-color: #d07700;
+}
+
+
+/*MEDIA QUERIES*/
+
+
+  @media only screen and (max-width: 768px) {
+  
+      html{
+
+     font-size: 50%;
+
+
+
+      }
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }

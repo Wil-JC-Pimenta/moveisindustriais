@@ -1,0 +1,172 @@
+<!doctype html>
+<!DOCTYPE html>
+<html class="principal">
+<head>
+	<meta charset="utf-8">
+	<title>Contato</title>
+ 
+ <link rel="stylesheet" type="text/css" href="estilo.css">
+
+
+ </head>
+
+<body >
+  <thead>
+    <div class="pagina-principal">
+
+      <nav class="pagina-principal">
+        <a href="Index.html">Home</a> |
+        <a href="quemsomos.html">Quem somos</a> |
+        <a href="contato.html">Cadastro</a> |
+        <a href="galeriadefotos.html">Galeria de fotos</a>
+        <a href="login.html">Login</a> |
+      </nav>
+
+<h2 align="center"><strong> METALNART - MÓVEIS INDÚSTRIAIS</h2></strong></h2>
+</div>
+ <br>
+<hr><br><br><br>
+</thead>
+
+
+<tbody class="textocadastro">
+
+  
+
+  <h1>Cadastro de Clientes</h1>
+  <form id="formcadastro" action="https://formspree.io/meuemailaqui" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br>
+  
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="_replyto" required><br>
+  
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required><br>
+  
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco" name="endereco" required><br>
+  
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem"></textarea><br>
+  
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div class="social-icons">
+    <a href="#">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="#">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="#">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+</tbody>
+<script src="caminho/para/script.js"></script>
+<script>
+  const formCadastro = document.getElementById('formcadastro');
+
+  formCadastro.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    // Obtém os dados do formulário
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const telefone = document.getElementById('telefone').value;
+    const endereco = document.getElementById('endereco').value;
+    const mensagem = document.getElementById('mensagem').value;
+
+    // Cria um objeto com os dados
+    const dados = {
+      nome,
+      email,
+      telefone,
+      endereco,
+      mensagem
+    };
+
+    // Converte o objeto para JSON
+    const dadosJSON = JSON.stringify(dados);
+
+    // Salva o JSON em um arquivo usando a API de arquivos do navegador
+    const arquivo = new Blob([dadosJSON], {type: 'application/json'});
+    const url = URL.createObjectURL(arquivo);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'dados.json';
+    link.click();
+
+    // Limpa o formulário após o envio
+    formCadastro.reset();
+  });
+
+  const nodemailer = require('nodemailer');
+const fs = require('fs');
+
+// Lê o arquivo JSON
+const jsonData = fs.readFileSync('cadastro.json');
+
+// Converte o JSON para objeto JavaScript
+const data = JSON.parse(jsonData);
+
+// Cria um objeto com as configurações do transporte de email
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'wilker.mecanica@gmail.com',
+    pass: 'swery8421'
+  }
+});
+
+// Define o email de destino e o conteúdo do email
+const mailOptions = {
+  from: 'wilker.mecanica@gmail.com',
+  to: 'wiljcpimenta@gmail.com',
+  subject: 'Dados do cadastro',
+  text: JSON.stringify(data)
+};
+
+// Envia o email
+transporter.sendMail(mailOptions, function(error, info){
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email enviado: ' + info.response);
+  }
+});
+//--------> requisição HTTP em JavaScript
+const xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://jsonplaceholder.typicode.com/todos/1');
+xhr.onload = () => {
+  if (xhr.status === 200) {
+    console.log(xhr.responseText);
+  } else {
+    console.error(`Erro ${xhr.status}: ${xhr.statusText}`);
+  }
+};
+xhr.send();
+
+
+
+
+
+</script>
+
+
+
+
+
+</tbody>
+    <h6 align="center"> Todos os direitos reservados </h6>
+
+</html>
+
+
+</body>
+</html>

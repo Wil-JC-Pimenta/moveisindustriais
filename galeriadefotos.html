@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Metalnart Loja de móveis insdústriais - Vale do Aço-MG">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>METALNART - MÓVEIS INDÚSTRIAIS</title>
+  </head>
+
+  <body class="galeriacor">
+    
+    <thead>
+      <div class="pagina-principal">
+  
+        <nav class="pagina-principal">
+          <a href="Index.html">Home</a> |
+          <a href="quemsomos.html">Quem somos</a> |
+          <a href="contato.html">Cadastro</a> |
+          <a href="galeriadefotos.html">Galeria de fotos</a>
+          <a href="login.html">Login</a> |
+        </nav>
+  
+    </div>
+    <div class="galeriacor">
+    <h2 align="center"><strong>METALNART - MÓVEIS INDÚSTRIAIS</strong></h2>
+   </div>
+   <div class="carousel">
+    <div class="carousel-inner">
+      <img src="Imagens-2/img1.jpg">
+      <img src="Imagens-2/img2.jpg">
+      <img src="Imagens-2/img3.jpg">
+      <img src="Imagens-2/img4.jpg">
+      <img src="Imagens-2/img5.jpg">
+      <img src="Imagens-2/img6.jpg">
+      <img src="Imagens-2/img7.jpg">
+      <img src="Imagens-2/img8.jpg">
+      <img src="Imagens-2/img9.jpg">
+      <img src="Imagens-2/img10.jpg">
+      <img src="Imagens-2/img11.jpg">
+      <img src="Imagens-2/img12.jpg">
+      <img src="Imagens-2/img14.jpg">
+      <img src="Imagens-2/img15.jpg">
+      <img src="Imagens-2/img16.jpg">
+      <img src="Imagens-2/img17.jpg">
+      <img src="Imagens-2/img18.jpg">
+      <img src="Imagens-2/img19.jpg">
+      <img src="Imagens-2/img20.jpg">
+    </div>
+    <button class="carousel-prev">&#8249;</button>
+    <button class="carousel-next">&#8250;</button>
+  </div><div class="banner">
+    <table>
+        <tr>
+          <td> <img src="Banner/bannermetalnart.png"  id="banner"></td>
+        </tr>
+    
+      </table>
+    
+    
+    </div>
+  
+  
+  <script>
+    var carouselInner = document.querySelector('.carousel-inner');
+    var prevBtn = document.querySelector('.carousel-prev');
+    var nextBtn = document.querySelector('.carousel-next');
+    var slideWidth = 200;
+
+    prevBtn.addEventListener('click', function(){
+      carouselInner.style.transform = "translateX(" + (slideWidth + 10) + "px)";
+    });
+
+    nextBtn.addEventListener('click', function(){
+      carouselInner.style.transform = "translateX(-" + (slideWidth + 10) + "px)";
+    });
+
+    carouselInner.addEventListener('transitionend', function(){
+      var firstImg = carouselInner.querySelector('img:first-child');
+      carouselInner.appendChild(firstImg);
+      carouselInner.style.transition = 'none';
+      carouselInner.style.transform = 'translateX(0)';
+      setTimeout(function(){
+        carouselInner.style.transition = 'all 1s ease-in-out';
+      }, 50);
+    });
+  </script>
+</body>
+</html>
